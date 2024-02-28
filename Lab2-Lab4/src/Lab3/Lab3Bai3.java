@@ -22,17 +22,20 @@ public class Lab3Bai3 {
 			System.out.printf("a[%d] = ",i);
 			a[i]= scanner.nextInt();
 		}
-		System.out.printf("Mảng vừa nhập là ");
+		System.out.printf("Mảng vừa nhập là "+ Arrays.toString(a));
+		
+		 Arrays.sort(a);
+		 System.out.printf("Mảng sau khi được sắp xếp là: "+Arrays.toString(a));
+			
+			
+		int Min = a[0];
 		for(int i = 0; i < a.length; i++) {
 			
-			System.out.println(a[i]);
+			Min= Math.min(Min,a[i]);
 		}
-		 Arrays.sort(a);
-		 System.out.printf("Mảng sau khi được sắp xếp là: ");
-			for(int i = 0; i < a.length; i++) {
-				
-				System.out.println(a[i]);
-			}
+		 System.out.printf("Phần tử nhỏ nhất là : %d ",Min);
+		 
+		
 
 	}
 
