@@ -12,15 +12,31 @@ import java.util.Scanner;
 
 public class SanPham{
 	Scanner scanner = new Scanner(System.in);	
-	public static String ten;
-	public static double donGia;
-	public static  double giamGia = 0.9;
+	private static String ten;
+	private static double donGia;
+	private static  double giamGia = 0.9;
 	public SanPham(String ten,double donGia,double giamGia) {
 		this.ten = ten;
 		this.donGia = donGia;
 		this.giamGia =giamGia;
 		
 	}
+	public String Ten(){
+		return this.ten;
+		}
+	
+	public void setTen(String ten){
+		this.ten = ten;
+		}
+	public double donGia(){
+		return this.donGia;
+		}
+	
+	public void setDonGia(double donGia){
+		this.donGia = donGia;
+		}
+	
+	
 	public SanPham(String ten,double donGia) {
 		this.ten = ten;
 		this.donGia = donGia;		
